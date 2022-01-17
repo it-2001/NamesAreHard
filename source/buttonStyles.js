@@ -17,8 +17,8 @@ var buttonStyles = {
     GameNavigation(butt, init) {
         if (init){
             butt.images = {normal:new Image(), hover:new Image()}
-            butt.images.normal.src = "./img/" + butt.text + ".png"
-            butt.images.hover.src = "./img/" + butt.text + "Hover.png"
+            butt.images.normal.src = "./img/navig/" + butt.text + ".png"
+            butt.images.hover.src = "./img/navig/" + butt.text + "Hover.png"
             return {  }
         }
         var col = butt.hover ? "hover" : "normal"
