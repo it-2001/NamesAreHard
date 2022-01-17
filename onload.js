@@ -9,7 +9,7 @@ function createScreen(name, objs, mainScreenLoop) {
 }
 function loadData() {
     var backgroundImage = new Image()
-    backgroundImage.src = "img/bg.png"
+    backgroundImage.src = "./img/bg.png"
     createScreen("Title", {
         buttons: [
             [1600 / 2 - 100, 300, 200, 50, lg("Start"), c => { changeScreen("Start") }, "Title"],

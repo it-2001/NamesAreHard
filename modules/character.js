@@ -3,7 +3,7 @@ class Character {
         this.name = name
         this.title = title
         this.image = new Image()
-        this.image.src = (image == null) ? "img/characters/blank.png" : "img/characters/" + image
+        this.image.src = (image == null) ? "./img/characters/blank.png" : "./img/characters/" + image
         if (image == null)
             this.image = null
         this.spells = spells
@@ -126,7 +126,7 @@ class Character {
     }
 }
 var characters = [
-    new Character("", "", "1.jpg", [], 0),
+    new Character("", "", "./1.jpg", [], 0),
     new Character("Unknown", "", null, [], 0),
-    new Character("Bea-n", "She agreed to be a character here :)", "2.jpg", [{ name: "spellbreak" }, { name: "something cool" }, { name: "whooho jsem kouzelník" }, { name: "a uz nevim" }], 3, { dialogue: 1 }),
+    new Character("Bea-n", "She agreed to be a character here :)", "./2.jpg", [{ name: "spellbreak" }, { name: "something cool" }, { name: "whooho jsem kouzelník" }, { name: "a uz nevim" }], 3, { dialogue: 1 }),
 ]

@@ -20,7 +20,7 @@ class Game {
         }
         this.images = ["hp.png", "crosshair.png"]
         for (var i in this.images) {
-            let src = "img/" + this.images[i]
+            let src = "./img/" + this.images[i]
             this.images[i] = new Image()
             this.images[i].src = src
         }
