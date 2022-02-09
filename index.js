@@ -121,6 +121,6 @@ function main() {
     if (currentScreen in windows)
         windows[currentScreen].draw()
 
-    
-    renderMode ? setTimeout(main, toBeDrawn - Date.now()) : requestAnimationFrame(main)
+    setTimeout(() => {renderMode ? setTimeout(main, toBeDrawn - Date.now()) : requestAnimationFrame(main)}, toBeDrawn - Date.now())
+    //renderMode ? setTimeout(main, toBeDrawn - Date.now()) : requestAnimationFrame(main)
 }
